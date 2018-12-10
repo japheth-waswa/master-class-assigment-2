@@ -1,22 +1,32 @@
-[
-    {
-        "productid":"1-2-3-4-5",
-        "productname":"French Bed Pizza"
+{
+    "1-2-3-4-5": {
+        "productid": "1-2-3-4-5",
+        "productname": "French Bed Pizza",
+        "price": 300,
+        "currency": "kes"
     },
-    {
-        "productid":"2-3-4-5-1",
-        "productname":"Baked Ziti Pizza"
+    "2-3-4-5-1": {
+        "productid": "2-3-4-5-1",
+        "productname": "Baked Ziti Pizza",
+        "price": 500,
+        "currency": "kes"
     },
-    {
-        "productid":"3-4-5-1-2",
-        "productname":"Grandma Slice Pizza"
+    "3-4-5-1-2": {
+        "productid": "3-4-5-1-2",
+        "productname": "Grandma Slice Pizza",
+        "price": 100,
+        "currency": "kes"
     },
-    {
-        "productid":"4-5-1-2-3",
-        "productname":"New York Slice Pizza"
+    "4-5-1-2-3": {
+        "productid": "4-5-1-2-3",
+        "productname": "New York Slice Pizza",
+        "price": 4500,
+        "currency": "kes"
     },
-    {
-        "productid":"5-1-2-3-4",
-        "productname":"Chicago Pizza"
+    "5-1-2-3-4": {
+        "productid": "5-1-2-3-4",
+        "productname": "Chicago Pizza",
+        "price": 900,
+        "currency": "kes"
     }
-]
+}
