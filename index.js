@@ -2,24 +2,41 @@
  * primary file for the api
  */
 
- //dependencies
- var server = require('./lib/server');
-//  var workers = require('./lib/workers');
+//dependencies
+var server = require('./lib/server');
 
- //declare the app
- var app = {};
+//declare the app
+var app = {};
 
- //init function
- app.init= function(){
-     //start the server
-     server.init();
+app.testStripe = function () {
 
-     //start the workers
-   //  workers.init();
- };
+  var helpers = require('./lib/helpers');
 
- //execute
- app.init();
+  var stripeCheckoutData = {
+    amount: 2000,
+    currency: 'KES',
+    description: 'all list item description'
+  };
 
- //export the app
- module.exports=app;
+  helpers.stripeCheckout(stripeCheckoutData, function (err) {
+    if (err) {
+      console.log(err);
+    }
+  });
+
+}
+
+
+//init function
+app.init = function () {
+  //start the server
+  server.init();
+  //app.testStripe();
+
+};
+
+//execute
+app.init();
+
+//export the app
+module.exports = app;
